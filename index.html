@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aicha Belghiti — Software &amp; Machine-Learning Engineer</title>
+<meta name="description" content="Portfolio of Aicha Belghiti — Software &amp; Machine-Learning Engineer based in Rabat, Morocco. Deep-learning NLP, data integration and full-stack development.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="progress" style="position:fixed;top:0;left:0;height:3px;width:0%;background:var(--accent);z-index:300;transition:width .08s linear"></div>
+
+<header style="position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px clamp(20px,4vw,52px);background:rgba(248,246,244,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)">
+  <a href="#home" style="font-weight:800;letter-spacing:.18em;font-size:14px;text-transform:uppercase;color:var(--ink);white-space:nowrap">Aicha Belghiti</a>
+  <nav id="main-nav" class="main-nav" style="display:flex;gap:clamp(14px,2vw,32px);align-items:center">
+      <a href="#home" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">Home</a>
+      <a href="#about" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">About</a>
+      <a href="#qualifications" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">Qualifications</a>
+      <a href="#services" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">Services</a>
+      <a href="#work" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">Work</a>
+      <a href="#cases" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">Case Studies</a>
+      <a href="#contact" class="nav-link" style="font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);padding-bottom:3px">Contact</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="#contact" data-magnetic class="btn-primary talk-btn" style="display:inline-flex;align-items:center;gap:8px;padding:11px 20px;background:var(--accent);color:#F8F6F4;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:100px;white-space:nowrap">Let's Talk</a>
+    <button id="hamburger" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section id="home" style="position:relative;padding:clamp(28px,5vw,64px) clamp(20px,4vw,52px) 40px;min-height:calc(100vh - 74px);display:flex;flex-direction:column">
+  <div class="hero-grid" style="display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:clamp(16px,3vw,40px);align-items:start;flex:1">
+    <div class="hero-intro" style="max-width:280px">
+      <span style="display:inline-block;font-family:monospace;font-size:11px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;margin-bottom:16px">(&nbsp;01&nbsp;/&nbsp;Intro&nbsp;)</span>
+      <p style="font-size:16px;line-height:1.55;color:var(--ink);margin:0;font-weight:500;text-wrap:pretty">I build intelligent systems and reliable data pipelines — turning complex problems into elegant, production-ready software, from deep-learning NLP to enterprise-grade integration.</p>
+    </div>
+
+    <div style="text-align:center;position:relative;display:flex;flex-direction:column;align-items:center">
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.32em;color:var(--muted);text-transform:uppercase;margin-bottom:10px">AI &amp; Machine Learning Engineer</span>
+      <h1 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;line-height:.82;letter-spacing:.01em;text-transform:uppercase;font-size:clamp(58px,12.5vw,182px);color:var(--ink);position:relative;z-index:1">Software</h1>
+      <div style="position:relative;z-index:3;margin:-1vw 0 -2vw;width:clamp(230px,27vw,360px);height:clamp(300px,38vw,500px);display:flex;align-items:flex-end;justify-content:center">
+        <div style="position:absolute;bottom:6%;left:50%;transform:translateX(-50%);width:clamp(190px,23vw,300px);height:clamp(190px,23vw,300px);border-radius:50%;background:radial-gradient(circle,rgba(90,14,24,.14) 0%,rgba(90,14,24,0) 70%);z-index:0"></div>
+        <img src="images/aicha-cutout.png" alt="Aicha Belghiti" style="position:relative;z-index:1;width:100%;height:100%;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 32px 40px rgba(90,14,24,.28))">
+      </div>
+      <h1 style="margin:0;font-family:'Anton',sans-serif;font-weight:400;line-height:.82;letter-spacing:.01em;text-transform:uppercase;font-size:clamp(58px,12.5vw,182px);color:var(--accent);position:relative;z-index:1">Engineer</h1>
+      <div style="font-family:'Parisienne',cursive;font-size:clamp(38px,6vw,74px);color:var(--accent);line-height:1;margin-top:-6px;transform:rotate(-4deg)">Aicha Belghiti</div>
+    </div>
+
+    <div class="hero-side" style="display:flex;flex-direction:column;align-items:flex-end;gap:14px;height:100%">
+      <span style="writing-mode:vertical-rl;font-family:monospace;font-size:11px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase">Rabat · Morocco · 2026</span>
+    </div>
+  </div>
+
+  <div style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-top:auto;padding-top:28px;border-top:1px solid var(--line)">
+    <div style="display:flex;align-items:center;gap:12px">
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase">Scroll to explore</span>
+      <span style="display:inline-block;animation:ab-bob 2s ease-in-out infinite;color:var(--accent)">↓</span>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a href="https://linkedin.com/in/aichabelghiti" target="_blank" rel="noopener" class="social-chip" style="display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border:1px solid var(--line);border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink);background:#fff">LinkedIn</a>
+        <a href="#" class="social-chip" style="display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border:1px solid var(--line);border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink);background:#fff">GitHub</a>
+        <a href="mailto:aichabelghiti33@gmail.com" class="social-chip" style="display:inline-flex;align-items:center;gap:7px;padding:9px 16px;border:1px solid var(--line);border-radius:100px;font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink);background:#fff">Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT + STATS ================= -->
+<section id="about" style="background:var(--accent);color:#F4ECEC;padding:clamp(60px,9vw,130px) clamp(20px,4vw,52px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-reveal style="display:flex;align-items:baseline;gap:16px;margin-bottom:clamp(30px,5vw,58px)">
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:rgba(244,236,236,.6);text-transform:uppercase">(&nbsp;01&nbsp;)</span>
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:rgba(244,236,236,.6);text-transform:uppercase">About</span>
+    </div>
+    <div class="about-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(28px,5vw,64px);align-items:center">
+      <div data-reveal>
+        <h2 style="margin:0 0 26px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.01em;font-size:clamp(46px,8vw,116px)">Who<br>Am I</h2>
+        <p style="font-size:17px;line-height:1.7;color:rgba(244,236,236,.9);margin:0 0 18px;max-width:560px;text-wrap:pretty">I'm Aicha — a Computer Science graduate of Al Akhawayn University (GPA 3.82/4.00) who has spent two years as an International Software Integrator &amp; EDI Consultant, engineering automated data pipelines that connect enterprise systems across jurisdictions.</p>
+        <p style="font-size:17px;line-height:1.7;color:rgba(244,236,236,.9);margin:0 0 32px;max-width:560px;text-wrap:pretty">Alongside industry work, I build machine-learning and NLP systems — from LSTM chatbots and RAG pipelines to Bayesian reasoning agents. I care about rigor, clarity, and software that ships.</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">Python</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">TensorFlow / PyTorch</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">NLP</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">JavaScript</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">React Native</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">SQL</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">EDI</span>
+            <span style="padding:8px 15px;border:1px solid rgba(244,236,236,.28);border-radius:100px;font-size:12.5px;font-weight:500;letter-spacing:.03em;color:rgba(244,236,236,.92)">Bayesian AI</span>
+        </div>
+      </div>
+      <div data-reveal style="width:100%;aspect-ratio:4/5;border-radius:26px;overflow:hidden;border:1px solid rgba(244,236,236,.22)">
+        <img src="images/aicha-profile.jpeg" alt="Aicha Belghiti" style="width:100%;height:100%;object-fit:cover;object-position:50% 35%">
+      </div>
+    </div>
+
+    <div class="stats-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(244,236,236,.18);border:1px solid rgba(244,236,236,.18);border-radius:20px;overflow:hidden;margin-top:clamp(40px,6vw,72px)">
+        <div data-reveal style="background:var(--accent);padding:clamp(24px,3vw,40px) clamp(16px,2vw,28px);display:flex;flex-direction:column;gap:6px">
+          <div style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,66px);line-height:1;letter-spacing:.01em">3.82<span style="font-size:.45em;vertical-align:super;color:rgba(244,236,236,.7)">/4.0</span></div>
+          <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,236,236,.75);font-weight:500">Degree GPA</div>
+        </div>
+        <div data-reveal style="background:var(--accent);padding:clamp(24px,3vw,40px) clamp(16px,2vw,28px);display:flex;flex-direction:column;gap:6px">
+          <div style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,66px);line-height:1;letter-spacing:.01em">2<span style="font-size:.45em;vertical-align:super;color:rgba(244,236,236,.7)">yrs</span></div>
+          <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,236,236,.75);font-weight:500">Industry Experience</div>
+        </div>
+        <div data-reveal style="background:var(--accent);padding:clamp(24px,3vw,40px) clamp(16px,2vw,28px);display:flex;flex-direction:column;gap:6px">
+          <div style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,66px);line-height:1;letter-spacing:.01em">8<span style="font-size:.45em;vertical-align:super;color:rgba(244,236,236,.7)">+</span></div>
+          <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,236,236,.75);font-weight:500">Projects Delivered</div>
+        </div>
+        <div data-reveal style="background:var(--accent);padding:clamp(24px,3vw,40px) clamp(16px,2vw,28px);display:flex;flex-direction:column;gap:6px">
+          <div style="font-family:'Anton',sans-serif;font-weight:400;font-size:clamp(40px,5vw,66px);line-height:1;letter-spacing:.01em">4<span style="font-size:.45em;vertical-align:super;color:rgba(244,236,236,.7)"></span></div>
+          <div style="font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:rgba(244,236,236,.75);font-weight:500">Languages Spoken</div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUALIFICATIONS ================= -->
+<section id="qualifications" style="padding:clamp(64px,9vw,130px) clamp(20px,4vw,52px)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(32px,5vw,58px)">
+      <div>
+        <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase">(&nbsp;02&nbsp;/&nbsp;Credentials&nbsp;)</span>
+        <h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.01em;font-size:clamp(44px,7.5vw,104px);color:var(--ink)">Qualifications</h2>
+      </div>
+      <p style="max-width:320px;font-size:15px;line-height:1.6;color:var(--muted);margin:0;text-wrap:pretty">Education, scholarships and honors earned across four years of academic and competitive work.</p>
+    </div>
+    <div class="qual-grid" style="display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(24px,4vw,44px);align-items:start">
+      <div class="qual-cards" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">
+          <div data-reveal class="qual-card" style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(90,14,24,.2);padding:4px 9px;border-radius:100px;margin-bottom:16px">Degree</span>
+            <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;line-height:1.25;color:var(--ink)">B.Sc. Computer Science</h3>
+            <div style="font-size:14px;color:var(--muted);margin-bottom:10px">Al Akhawayn University, Ifrane</div>
+            <div style="font-size:12.5px;font-family:monospace;letter-spacing:.03em;color:#a09890">2019 – 2023 · GPA 3.82/4.00</div>
+          </div>
+          <div data-reveal class="qual-card" style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(90,14,24,.2);padding:4px 9px;border-radius:100px;margin-bottom:16px">Minor</span>
+            <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;line-height:1.25;color:var(--ink)">Business Administration</h3>
+            <div style="font-size:14px;color:var(--muted);margin-bottom:10px">Al Akhawayn University</div>
+            <div style="font-size:12.5px;font-family:monospace;letter-spacing:.03em;color:#a09890">Complementary track</div>
+          </div>
+          <div data-reveal class="qual-card" style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(90,14,24,.2);padding:4px 9px;border-radius:100px;margin-bottom:16px">Scholarship</span>
+            <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;line-height:1.25;color:var(--ink)">Al Ghurair Foundation Scholarship</h3>
+            <div style="font-size:14px;color:var(--muted);margin-bottom:10px">Full merit-based award</div>
+            <div style="font-size:12.5px;font-family:monospace;letter-spacing:.03em;color:#a09890">450,000 MAD · 2019–2023</div>
+          </div>
+          <div data-reveal class="qual-card" style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(90,14,24,.2);padding:4px 9px;border-radius:100px;margin-bottom:16px">Honors</span>
+            <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;line-height:1.25;color:var(--ink)">President's &amp; Dean's List</h3>
+            <div style="font-size:14px;color:var(--muted);margin-bottom:10px">Al Akhawayn University</div>
+            <div style="font-size:12.5px;font-family:monospace;letter-spacing:.03em;color:#a09890">6 semesters of distinction</div>
+          </div>
+          <div data-reveal class="qual-card" style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(90,14,24,.2);padding:4px 9px;border-radius:100px;margin-bottom:16px">Award</span>
+            <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;line-height:1.25;color:var(--ink)">NASA Space Apps Challenge</h3>
+            <div style="font-size:14px;color:var(--muted);margin-bottom:10px">2nd Place · Casablanca</div>
+            <div style="font-size:12.5px;font-family:monospace;letter-spacing:.03em;color:#a09890">2022</div>
+          </div>
+          <div data-reveal class="qual-card" style="background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px 24px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(90,14,24,.2);padding:4px 9px;border-radius:100px;margin-bottom:16px">Mentorship</span>
+            <h3 style="margin:0 0 6px;font-size:19px;font-weight:700;line-height:1.25;color:var(--ink)">DigiGirlz Program</h3>
+            <div style="font-size:14px;color:var(--muted);margin-bottom:10px">3rd Place as Mentor</div>
+            <div style="font-size:12.5px;font-family:monospace;letter-spacing:.03em;color:#a09890">2021</div>
+          </div>
+      </div>
+      <div data-reveal class="qual-diploma" style="position:sticky;top:100px;aspect-ratio:3/4;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:0 30px 60px -34px rgba(90,14,24,.4)">
+        <img src="images/aicha-certificates.png" alt="Aicha Belghiti certificates and diplomas" style="width:100%;height:100%;object-fit:cover;border-radius:10px;border:1px solid var(--line)">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" style="padding:clamp(64px,9vw,130px) clamp(20px,4vw,52px);background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(32px,5vw,58px)">
+      <div>
+        <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase">(&nbsp;03&nbsp;/&nbsp;Capabilities&nbsp;)</span>
+        <h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.01em;font-size:clamp(44px,7.5vw,104px);color:var(--ink)">What I Do</h2>
+      </div>
+      <p style="max-width:340px;font-size:15px;line-height:1.6;color:var(--muted);margin:0;text-wrap:pretty">A cross-disciplinary toolkit spanning machine learning, data engineering and full-stack development.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px">
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">01</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Machine Learning</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Designing and training models — from classical clustering to deep neural networks.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">02</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">NLP &amp; LLM Systems</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Conversational AI, embeddings and RAG pipelines for context-aware generation.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">03</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Data Integration &amp; EDI</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Automated pipelines converting ERP formats to EDIFACT, X12, PEPPOL and UBL.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">04</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Full-Stack Development</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">React Native and REST-driven interfaces with robust state management.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">05</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Systems &amp; APIs</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Secure protocols — REST, SFTP, OFTP2 — for reliable interoperability.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">06</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Probabilistic AI</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Bayesian inference and graphical models for reasoning under uncertainty.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">07</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Data Analysis</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Preprocessing, feature engineering and clustering that surface real insight.</p>
+        </div>
+        <div data-reveal class="service-card" style="background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:30px 26px;min-height:210px;display:flex;flex-direction:column">
+          <div style="font-family:'Anton',sans-serif;font-size:34px;color:rgba(90,14,24,.22);letter-spacing:.02em;margin-bottom:auto">08</div>
+          <h3 style="margin:22px 0 10px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Technical Consulting</h3>
+          <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--muted);text-wrap:pretty">Diagnosing inefficiencies and optimizing workflows for performance.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="work" style="padding:clamp(64px,9vw,130px) clamp(20px,4vw,52px)">
+  <div style="max-width:1300px;margin:0 auto">
+    <div data-reveal style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:clamp(32px,5vw,58px)">
+      <div>
+        <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase">(&nbsp;04&nbsp;/&nbsp;Selected&nbsp;Work&nbsp;)</span>
+        <h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.01em;font-size:clamp(44px,7.5vw,104px);color:var(--ink)">Portfolio</h2>
+      </div>
+      <p style="max-width:320px;font-size:15px;line-height:1.6;color:var(--muted);margin:0;text-wrap:pretty">Research prototypes, production systems and engineering deep-dives.</p>
+    </div>
+    <div class="portfolio-cols" style="columns:3;column-gap:18px">
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:340px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:radial-gradient(circle at 22% 26%, rgba(255,255,255,.14) 0 1.5px, transparent 2px) 0 0/26px 26px, radial-gradient(circle at 70% 68%, rgba(255,255,255,.10) 0 1.5px, transparent 2px) 0 0/34px 34px, linear-gradient(145deg,#5A0E18,#2b070d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">{ •_• }</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">LSTM · RAG · OpenAI</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">NLP · Deep Learning</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Mental-Health Chatbots</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Five architectures (FFNN, LSTM, encoder-decoder) with a RAG pipeline on Pinecone + OpenAI.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:290px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:repeating-linear-gradient(0deg, rgba(255,255,255,.08) 0 1px, transparent 1px 40px), repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 1px, transparent 1px 40px), linear-gradient(150deg,#3b1220,#160409);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">P(A|B)</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">Bayesian · C# · Unity</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Bayesian AI · Unity</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Bust the Ghost</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Real-time Bayesian engine computing posterior ghost locations from spatial evidence.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:270px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:radial-gradient(circle at 30% 40%, rgba(255,255,255,.22) 0 3px, transparent 4px) 0 0/28px 28px, radial-gradient(circle at 62% 72%, rgba(255,255,255,.14) 0 2px, transparent 3px) 0 0/22px 22px, linear-gradient(135deg,#6b1220,#2b070d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">● ● ●</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">K-Means · R · clustering</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Machine Learning · R</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">K-Means Survey Analysis</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Clustered 147 survey records with Elbow &amp; Gap-statistic optimization.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:320px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:repeating-linear-gradient(0deg, rgba(255,255,255,.10) 0 1px, transparent 1px 52px), repeating-linear-gradient(90deg, rgba(255,255,255,.10) 0 1px, transparent 1px 52px), linear-gradient(160deg,#4a0f1a,#1a0509);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">⊢ ∀x</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">Prolog · FOL · inference</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Logical AI · Prolog</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Wumpus World Agent</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">First-order-logic inference agent deducing hazards from sensory percepts.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:300px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:linear-gradient(180deg, rgba(255,255,255,.10) 0 6px, transparent 6px 100%) 0 0/100% 46px, linear-gradient(140deg,#5A0E18,#7A1323 55%,#2b070d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">[ ⌘ ]</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">React Native · Formik</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">React Native · Mobile</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Real-Estate Social App</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Multi-parameter property search with dynamic sorting and live comments.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:340px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:repeating-linear-gradient(90deg, rgba(255,255,255,.09) 0 2px, transparent 2px 30px), linear-gradient(120deg,#3b1220,#5A0E18 60%,#160409);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">→∥→</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">EDIFACT · X12 · SFTP</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">Enterprise · EDI</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">EDICOM Integration Platform</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Custom JavaScript transformation logic across multi-jurisdiction compliance.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:270px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:radial-gradient(circle at 50% 50%, rgba(255,255,255,.14) 0 2px, transparent 3px) 0 0/20px 20px, linear-gradient(135deg,#6b1220,#2b070d);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">[ ][ ][ ]</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">Pinecone · embeddings</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">AI · RAG</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Context-Aware Retrieval</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Vector-database retrieval augmenting generation for grounded responses.</p>
+          </div>
+        </div>
+        <div data-reveal class="project-card" style="break-inside:avoid;margin-bottom:18px;background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden">
+          <div style="overflow:hidden;height:300px;position:relative">
+            <div class="ab-zoom" style="width:100%;height:100%;background:linear-gradient(180deg, rgba(255,255,255,.08) 0 3px, transparent 3px 100%) 0 0/100% 34px, linear-gradient(150deg,#5A0E18,#3b1220);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:rgba(255,255,255,.92);text-align:center;padding:20px">
+              <div style="font-family:monospace;font-size:34px;letter-spacing:.06em;line-height:1;color:rgba(255,255,255,.96)">≡ ▾</div>
+              <div style="font-family:monospace;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)">React · Yup · UX</div>
+            </div>
+          </div>
+          <div style="padding:22px 22px 26px">
+            <span style="display:inline-block;font-family:monospace;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:10px">UI Engineering</span>
+            <h3 style="margin:0 0 8px;font-size:20px;font-weight:700;line-height:1.2;color:var(--ink)">Advanced Filter Search</h3>
+            <p style="margin:0;font-size:14px;line-height:1.55;color:var(--muted);text-wrap:pretty">Formik + Yup validated querying across seven property dimensions.</p>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASE STUDIES ================= -->
+<section id="cases" style="padding:clamp(64px,9vw,130px) clamp(20px,4vw,52px);background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div style="max-width:1240px;margin:0 auto">
+    <div data-reveal style="margin-bottom:clamp(40px,6vw,70px)">
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase">(&nbsp;05&nbsp;/&nbsp;In&nbsp;Depth&nbsp;)</span>
+      <h2 style="margin:12px 0 0;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.9;letter-spacing:.01em;font-size:clamp(44px,7.5vw,104px);color:var(--ink)">Case Studies</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:clamp(40px,6vw,80px)">
+      <div data-reveal class="case-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,52px);align-items:center">
+          <div style="aspect-ratio:4/3;border-radius:20px;border:1px solid var(--line);position:relative;overflow:hidden">
+            <img src="images/case-chatbot.png" alt="Deep-Learning Chatbots for Mental-Health Support" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <span style="position:absolute;top:16px;left:16px;font-family:'Anton',sans-serif;font-size:clamp(40px,5vw,72px);color:rgba(255,255,255,.85);line-height:1;z-index:2;text-shadow:0 2px 14px rgba(0,0,0,.4)">01</span>
+          </div>
+          <div>
+            <span style="display:inline-block;font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">NLP · Deep Learning</span>
+            <h3 style="margin:0 0 16px;font-size:clamp(24px,3vw,34px);font-weight:800;line-height:1.15;color:var(--ink)">Deep-Learning Chatbots for Mental-Health Support</h3>
+            <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:var(--muted);text-wrap:pretty">A research project exploring conversational AI as accessible, empathetic first-line mental-health support.</p>
+            <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:26px">
+              <div style="border-left:2px solid rgba(90,14,24,.28);padding-left:16px">
+                <div style="font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:5px">Challenge</div>
+                <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--ink);text-wrap:pretty">Mental-health conversations demand nuanced, context-aware replies — generic chatbots break down on emotional, open-ended dialogue.</p>
+              </div>
+              <div style="border-left:2px solid rgba(90,14,24,.28);padding-left:16px">
+                <div style="font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:5px">Solution</div>
+                <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--ink);text-wrap:pretty">Built and compared five architectures trained on curated datasets, then layered a RAG pipeline using a Pinecone vector database with OpenAI embeddings for grounded generation.</p>
+              </div>
+            </div>
+            <div class="case-metrics" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+                <div style="background:#fff;padding:18px 14px">
+                  <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,34px);color:var(--accent);line-height:1">82.6%</div>
+                  <div style="font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:5px">Best F1 (LSTM)</div>
+                </div>
+                <div style="background:#fff;padding:18px 14px">
+                  <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,34px);color:var(--accent);line-height:1">5</div>
+                  <div style="font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:5px">Architectures</div>
+                </div>
+                <div style="background:#fff;padding:18px 14px">
+                  <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,34px);color:var(--accent);line-height:1">RAG</div>
+                  <div style="font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:5px">Grounded</div>
+                </div>
+            </div>
+          </div>
+        </div>
+      <div data-reveal class="case-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,52px);align-items:center">
+          <div style="aspect-ratio:4/3;border-radius:20px;border:1px solid var(--line);position:relative;overflow:hidden">
+            <img src="images/case-edi.png" alt="EDI Integration &amp; ERP Interoperability at EDICOM" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+            <span style="position:absolute;top:16px;left:16px;font-family:'Anton',sans-serif;font-size:clamp(40px,5vw,72px);color:rgba(255,255,255,.85);line-height:1;z-index:2;text-shadow:0 2px 14px rgba(0,0,0,.4)">02</span>
+          </div>
+          <div>
+            <span style="display:inline-block;font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:12px">Enterprise · Data Integration</span>
+            <h3 style="margin:0 0 16px;font-size:clamp(24px,3vw,34px);font-weight:800;line-height:1.15;color:var(--ink)">EDI Integration &amp; ERP Interoperability at EDICOM</h3>
+            <p style="margin:0 0 20px;font-size:15px;line-height:1.65;color:var(--muted);text-wrap:pretty">Two years designing automated data pipelines connecting enterprise systems across multiple jurisdictions.</p>
+            <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:26px">
+              <div style="border-left:2px solid rgba(90,14,24,.28);padding-left:16px">
+                <div style="font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:5px">Challenge</div>
+                <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--ink);text-wrap:pretty">Enterprises exchange data in incompatible ERP formats under strict, region-specific regulatory requirements.</p>
+              </div>
+              <div style="border-left:2px solid rgba(90,14,24,.28);padding-left:16px">
+                <div style="font-family:monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:5px">Solution</div>
+                <p style="margin:0;font-size:14.5px;line-height:1.55;color:var(--ink);text-wrap:pretty">Engineered pipelines converting IDOC, CSV, XML and JSON into EDIFACT, ODETTE, X12, VDA, PEPPOL and UBL — secured with REST, SFTP and OFTP2 and extended with custom JavaScript logic.</p>
+              </div>
+            </div>
+            <div class="case-metrics" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden">
+                <div style="background:#fff;padding:18px 14px">
+                  <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,34px);color:var(--accent);line-height:1">6+</div>
+                  <div style="font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:5px">Format Standards</div>
+                </div>
+                <div style="background:#fff;padding:18px 14px">
+                  <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,34px);color:var(--accent);line-height:1">Multi</div>
+                  <div style="font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:5px">Jurisdiction</div>
+                </div>
+                <div style="background:#fff;padding:18px 14px">
+                  <div style="font-family:'Anton',sans-serif;font-size:clamp(24px,3vw,34px);color:var(--accent);line-height:1">24/7</div>
+                  <div style="font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-top:5px">Reliable</div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" style="background:var(--accent);color:#F4ECEC;padding:clamp(64px,9vw,130px) clamp(20px,4vw,52px)">
+  <div class="contact-grid" style="max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,72px);align-items:start">
+    <div data-reveal>
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.2em;color:rgba(244,236,236,.6);text-transform:uppercase">(&nbsp;06&nbsp;/&nbsp;Contact&nbsp;)</span>
+      <h2 style="margin:14px 0 26px;font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase;line-height:.86;letter-spacing:.01em;font-size:clamp(48px,8vw,116px)">Let's Work<br>Together</h2>
+      <p style="font-size:17px;line-height:1.6;color:rgba(244,236,236,.9);margin:0 0 32px;max-width:440px;text-wrap:pretty">Have a role, a research idea, or a system that needs building? I'd love to hear about it.</p>
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <a href="mailto:aichabelghiti33@gmail.com" class="contact-link" style="display:inline-flex;align-items:center;gap:12px;color:#F4ECEC;font-size:17px;font-weight:600">
+          <span style="font-family:monospace;font-size:11px;letter-spacing:.14em;color:rgba(244,236,236,.6);text-transform:uppercase;min-width:70px">Email</span>aichabelghiti33@gmail.com</a>
+        <a href="https://linkedin.com/in/aichabelghiti" target="_blank" rel="noopener" class="contact-link" style="display:inline-flex;align-items:center;gap:12px;color:#F4ECEC;font-size:17px;font-weight:600">
+          <span style="font-family:monospace;font-size:11px;letter-spacing:.14em;color:rgba(244,236,236,.6);text-transform:uppercase;min-width:70px">LinkedIn</span>in/aichabelghiti</a>
+        <div style="display:inline-flex;align-items:center;gap:12px;color:rgba(244,236,236,.9);font-size:17px;font-weight:600">
+          <span style="font-family:monospace;font-size:11px;letter-spacing:.14em;color:rgba(244,236,236,.6);text-transform:uppercase;min-width:70px">Based in</span>Rabat, Morocco</div>
+      </div>
+    </div>
+
+    <div data-reveal style="background:#F8F6F4;color:var(--ink);border-radius:24px;padding:clamp(26px,3vw,40px)">
+      <div id="form-sent" style="display:none;min-height:340px;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:14px">
+        <div style="width:56px;height:56px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:26px">✓</div>
+        <h3 style="margin:0;font-size:24px;font-weight:800">Message sent</h3>
+        <p style="margin:0;color:var(--muted);font-size:15px;max-width:280px">Thanks for reaching out — I'll get back to you shortly.</p>
+        <button id="send-again" type="button" style="margin-top:8px;background:none;border:1px solid var(--line);border-radius:100px;padding:10px 20px;font-size:13px;font-weight:600;color:var(--ink);cursor:pointer">Send another</button>
+      </div>
+      <form id="contact-form" style="display:flex;flex-direction:column;gap:16px">
+        <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Name</span>
+            <input required placeholder="Your name" class="field" style="border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;background:#fff;color:var(--ink);outline:none">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Email</span>
+            <input required type="email" placeholder="you@email.com" class="field" style="border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;background:#fff;color:var(--ink);outline:none">
+          </label>
+        </div>
+        <div class="form-row" style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Project</span>
+            <input placeholder="What's it about?" class="field" style="border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;background:#fff;color:var(--ink);outline:none">
+          </label>
+          <label style="display:flex;flex-direction:column;gap:7px">
+            <span style="font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Budget</span>
+            <select class="field" style="border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;background:#fff;color:var(--ink);outline:none">
+              <option>Let's discuss</option>
+              <option>&lt; $5k</option>
+              <option>$5k – $15k</option>
+              <option>$15k+</option>
+              <option>Full-time role</option>
+            </select>
+          </label>
+        </div>
+        <label style="display:flex;flex-direction:column;gap:7px">
+          <span style="font-family:monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)">Message</span>
+          <textarea required rows="4" placeholder="Tell me more..." class="field" style="border:1px solid var(--line);border-radius:12px;padding:13px 15px;font-size:15px;background:#fff;color:var(--ink);outline:none;resize:vertical"></textarea>
+        </label>
+        <button type="submit" data-magnetic class="btn-primary" style="margin-top:4px;background:var(--accent);color:#fff;border:none;border-radius:100px;padding:16px 24px;font-size:14px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;cursor:pointer">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer style="background:#14100F;color:#cfc7c2;padding:clamp(48px,6vw,80px) clamp(20px,4vw,52px) 32px">
+  <div style="max-width:1240px;margin:0 auto">
+    <div class="footer-grid" style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.1)">
+      <div>
+        <div style="font-family:'Anton',sans-serif;font-size:clamp(36px,5vw,64px);text-transform:uppercase;line-height:.9;color:#F8F6F4;letter-spacing:.01em">Aicha<br>Belghiti</div>
+        <p style="margin:18px 0 0;font-size:14px;color:#9a938e;max-width:320px;text-wrap:pretty">Software &amp; Machine-Learning Engineer building intelligent, reliable systems.</p>
+      </div>
+      <div>
+        <div style="font-family:monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7d756f;margin-bottom:16px">Navigate</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a href="#home" style="font-size:14px;color:#cfc7c2">Home</a>
+          <a href="#about" style="font-size:14px;color:#cfc7c2">About</a>
+          <a href="#qualifications" style="font-size:14px;color:#cfc7c2">Qualifications</a>
+          <a href="#services" style="font-size:14px;color:#cfc7c2">Services</a>
+          <a href="#work" style="font-size:14px;color:#cfc7c2">Work</a>
+          <a href="#cases" style="font-size:14px;color:#cfc7c2">Case Studies</a>
+          <a href="#contact" style="font-size:14px;color:#cfc7c2">Contact</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#7d756f;margin-bottom:16px">Connect</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a href="https://linkedin.com/in/aichabelghiti" target="_blank" rel="noopener" style="font-size:14px;color:#cfc7c2">LinkedIn</a>
+          <a href="#" style="font-size:14px;color:#cfc7c2">GitHub</a>
+          <a href="mailto:aichabelghiti33@gmail.com" style="font-size:14px;color:#cfc7c2">Email</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:26px">
+      <span style="font-size:12.5px;color:#7d756f">© 2026 Aicha Belghiti. All rights reserved.</span>
+      <span style="font-family:monospace;font-size:12px;letter-spacing:.08em;color:#7d756f;text-transform:uppercase">Designed &amp; built in Rabat</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
