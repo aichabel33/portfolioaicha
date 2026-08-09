@@ -164,3 +164,75 @@ header{
       -webkit-backdrop-filter:blur(20px) saturate(160%);
    }
 }
+
+/* ============================================================
+   MOBILE LAYOUT PATTERN
+   Stacked hero card - condensed stat bar - numbered service rows -
+   card-style case studies - rounded footer banner
+   ============================================================ */
+@media (max-width:640px){
+
+#home{
+     background:#fff;
+     margin:14px 12px 22px;
+     padding:26px 18px 30px !important;
+     border-radius:28px;
+     box-shadow:0 24px 54px -30px rgba(90,14,24,.32);
+     min-height:auto !important;
+}
+
+.stats-grid{
+     display:flex !important;
+     grid-template-columns:none !important;
+     overflow-x:auto;
+     -webkit-overflow-scrolling:touch;
+     background:none !important;
+     border:none !important;
+     border-radius:0 !important;
+     gap:10px !important;
+     padding-bottom:2px;
+     scrollbar-width:none;
+}
+   .stats-grid::-webkit-scrollbar{display:none}
+   .stats-grid > div{
+        flex:0 0 auto;
+        min-width:128px;
+        border-radius:16px !important;
+        border:1px solid rgba(244,236,236,.22);
+        padding:18px 16px !important;
+   }
+
+.service-card{
+     flex-direction:row !important;
+     align-items:center !important;
+     gap:16px;
+     min-height:auto !important;
+     padding:16px !important;
+     border-radius:16px !important;
+}
+   .service-card > div:first-child{
+        margin-bottom:0 !important;
+        flex:0 0 38px;
+        width:38px;height:38px;
+        display:flex;align-items:center;justify-content:center;
+        font-size:15px !important;
+        border-radius:50%;
+        background:rgba(90,14,24,.08);
+        color:var(--accent) !important;
+   }
+   .service-card h3{margin:0 0 4px !important;font-size:16px !important}
+   .service-card p{font-size:13px !important}
+
+.case-grid{
+     background:#fff;
+     border:1px solid var(--line);
+     border-radius:22px;
+     padding:22px 18px 28px !important;
+     box-shadow:0 22px 48px -30px rgba(90,14,24,.28);
+}
+
+footer{
+     margin:14px;
+     border-radius:24px;
+}
+}
