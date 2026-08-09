@@ -90,3 +90,42 @@
     }
   });
 })();
+
+
+/* ============================================================
+   Cursor-follower liquid glow
+============================================================ */
+(function () {
+   'use strict';
+   if (window.matchMedia && window.matchMedia('(hover: none), (pointer: coarse)').matches) return;
+
+ document.addEventListener('DOMContentLoaded', function () {
+    var glow = document.createElement('div');
+    glow.id = 'cursor-glow';
+    document.body.appendChild(glow);
+
+                           var mouseX = 0, mouseY = 0, curX = 0, curY = 0, primed = false;
+
+                           window.addEventListener('mousemove', function (e) {
+                              mouseX = e.clientX;
+                              mouseY = e.clientY;
+                              if (!primed) {
+                                 curX = mouseX; curY = mouseY; primed = true;
+                                 glow.classList.add('is-active');
+                              }
+                              var hoverTarget = e.target.closest && e.target.closest('a, button, [data-magnetic], .qual-card, .service-card, .project-card, .social-chip');
+                              glow.classList.toggle('is-hover', !!hoverTarget);
+                           }, { passive: true });
+
+                           document.addEventListener('mouseleave', function () {
+                              glow.classList.remove('is-active');
+                           });
+
+                           (function tick() {
+                              curX += (mouseX - curX) * 0.16;
+                              curY += (mouseY - curY) * 0.16;
+                              glow.style.transform = 'translate(' + curX + 'px,' + curY + 'px) translate(-50%,-50%)';
+                              requestAnimationFrame(tick);
+                           })();
+ });
+})();
