@@ -236,3 +236,40 @@ footer{
      border-radius:24px;
 }
 }
+
+/* ============================================================
+   EDI career additions — experience timeline · toolkit matrix ·
+   delivery steps · flow diagram
+   ============================================================ */
+.exp-item{display:grid;grid-template-columns:220px 1fr;gap:clamp(20px,4vw,56px);padding:clamp(28px,4vw,44px) 0;border-top:1px solid var(--line)}
+.exp-item:last-child{border-bottom:1px solid var(--line)}
+.exp-item ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.exp-item li{position:relative;padding-left:22px;font-size:15px;line-height:1.6;color:var(--ink);text-wrap:pretty}
+.exp-item li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:1.5px;background:var(--accent)}
+
+.toolkit{display:grid;grid-template-columns:200px 1fr;border-top:1px solid var(--line)}
+.toolkit > div{padding:18px 0;border-bottom:1px solid var(--line)}
+.toolkit .tk-label{font-family:monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding-right:16px}
+.toolkit .tk-items{display:flex;flex-wrap:wrap;gap:8px}
+.tk-items span{padding:6px 13px;border:1px solid var(--line);border-radius:100px;font-size:13px;font-weight:500;color:var(--ink);background:#fff}
+
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:rgba(244,236,236,.18);border:1px solid rgba(244,236,236,.18);border-radius:20px;overflow:hidden}
+.steps > div{background:var(--accent);padding:24px 18px;display:flex;flex-direction:column;gap:8px}
+
+.flow{display:flex;flex-direction:column;align-items:stretch;gap:8px;width:100%;max-width:340px}
+.flow-node{border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:10px 14px;background:rgba(255,255,255,.06);text-align:left}
+.flow-node b{display:block;font-family:monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:400;margin-bottom:3px}
+.flow-node span{font-size:14px;font-weight:600;color:#fff}
+.flow-arrow{text-align:center;font-family:monospace;color:rgba(255,255,255,.55);font-size:13px;line-height:1}
+
+@media (max-width:1024px){
+  .steps{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:860px){
+  .exp-item{grid-template-columns:1fr !important;gap:14px}
+  .toolkit{grid-template-columns:1fr}
+  .toolkit .tk-label{border-bottom:none !important;padding-bottom:0 !important}
+}
+@media (max-width:520px){
+  .steps{grid-template-columns:1fr 1fr}
+}
